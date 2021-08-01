@@ -1,0 +1,15 @@
+{
+  "name": "pypiler",
+  "version": "1.0.0",
+  "description": "A typescript transpiler that turns javascript to python.",
+  "main": "./build/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wayvshock",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^16.4.10",
+    "typescript": "^4.3.5"
+  }
+}

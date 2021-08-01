@@ -1,0 +1,5 @@
+export = {
+    get rules() {
+        return [" {", "}"];
+    }
+}
