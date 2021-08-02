@@ -16,9 +16,9 @@ export = class Compiler {
 
         readdirSync(folder).forEach(file => {
             let jsFile = require(`${this.options.basePath}/${file}`).toString();
-            Parser.parse(jsFile);
+            let data = Parser.parse(jsFile);
 
-            writeFile(`${output}/${file.replace(".js", ".py")}`, "", function (err) {
+            writeFile(`${output}/${file.replace(".js", ".py")}`, data.join("\n"), function (err) {
                 console.log(err || "");
             });
         })
