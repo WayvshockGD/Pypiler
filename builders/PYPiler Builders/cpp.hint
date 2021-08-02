@@ -1,0 +1,2 @@
+#define PYPILERBUILDERS_API __declspec(dllexport)
+#define PYPILERBUILDERS_API __declspec(dllimport)
